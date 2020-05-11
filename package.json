@@ -1,12 +1,12 @@
 {
   "version": "0.3.11",
   "license": "MIT",
-  "name": "@antlerengineering/multiselect",
+  "name": "@antlerengineering/global-snackbar",
   "publishConfig": {
     "access": "public"
   },
   "author": "Antler Engineering",
-  "module": "dist/multiselect.esm.js",
+  "module": "dist/index.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
