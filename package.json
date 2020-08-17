@@ -1,7 +1,7 @@
 {
   "version": "0.4.0",
   "license": "MIT",
-  "name": "Samosas",
+  "name": "samosas",
   "publishConfig": {
     "access": "public"
   },
