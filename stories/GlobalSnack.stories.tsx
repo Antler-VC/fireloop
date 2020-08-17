@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { withKnobs, boolean, text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
-import { useSnackContext } from '../src/snackContext';
+import { useSnackContext } from '../src/SnackContext';
 import { SnackProvider } from '../src/SnackProvider';
 import { Button, duration } from '@material-ui/core';
 
@@ -18,7 +18,7 @@ function ChildComponent() {
           snack.open({ message: 'soo good', severity: 'success' });
         }}
       >
-        eat a health snack
+        eat Samosas
       </Button>
       <br />
       <Button

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import Snackbar from '@material-ui/core/Snackbar';
-import { SnackContext } from './snackContext';
+import { SnackContext } from './SnackContext';
 import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
 
 function Alert(props: AlertProps) {

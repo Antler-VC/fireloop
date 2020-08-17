@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SnackContext } from './snackContext';
+import { SnackContext } from './SnackContext';
 import { EMPTY_STATE } from './constants/emptyState';
 import { ISnack } from './props/Snack';
 import Snack from './Snack';

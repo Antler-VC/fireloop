@@ -1,4 +1,4 @@
-# Samosas [![npm latest release](https://badgen.net/npm/v/samosas)](https://www.npmjs.com/Samosas) [![Minified size](https://badgen.net/bundlephobia/min/@antlerengineering/multiselect)](https://bundlephobia.com/result?p=@antlerengineering/multiselect)
+# Samosas [![npm latest release](https://badgen.net/npm/v/samosas)](https://www.npmjs.com/samosas) [![Minified size](https://badgen.net/bundlephobia/min/samosas)](https://bundlephobia.com/result?p=samosas)
 
 A component that lets you show a snackbar from anywhere in your app
 [Material-UI Snackbar component](https://material-ui.com/components/snackbars/).
