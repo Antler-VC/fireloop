@@ -1,4 +1,4 @@
-# Fireloop
+# Fireloop 🔥
 
 [![npm latest release](https://badgen.net/npm/v/fireloop)](https://www.npmjs.com/fireloop)
 [![Minified size](https://badgen.net/bundlephobia/min/fireloop)](https://bundlephobia.com/result?p=fireloop)
@@ -12,7 +12,14 @@ A component that lets your users give you feedback on your product
 ## Quick start
 
 ```jsx
-<Feedback collectionRef={db.collection('feedback')} auth={auth} />
+
+import FireLoop from 'fireloop'
+import {db,auth} from '../../firebase' // set your firebase app file location
+
+...
+// add inside your apps jsx
+<FireLoop collectionRef={db.collection('feedback')} auth={auth} />
+...
 ```
 
 ### props
