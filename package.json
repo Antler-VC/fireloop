@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "name": "fireloop",
   "publishConfig": {
@@ -26,14 +26,14 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
-    "yup": "^0.27.0",
-    "firebase": "^7.2.1",
     "@antlerengineering/form-builder": "^0.5.0",
     "@material-ui/core": "^4.9.0",
     "@material-ui/icons": "^4.9.0",
     "@material-ui/lab": "^4.0.0-alpha.51",
     "clsx": "^1.0.4",
-    "react": "^16.8.0"
+    "firebase": "^7.2.1",
+    "react": "^16.8.0",
+    "yup": "^0.27.0"
   },
   "husky": {
     "hooks": {
@@ -48,9 +48,6 @@
     "proseWrap": "always"
   },
   "devDependencies": {
-    "yup": "^0.27.0",
-    "@types/yup": "^0.26.24",
-    "firebase": "^7.2.1",
     "@antlerengineering/form-builder": "^0.5.0",
     "@babel/core": "^7.9.6",
     "@material-ui/core": "^4.9.0",
@@ -66,8 +63,10 @@
     "@storybook/react": "^5.3.18",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
+    "@types/yup": "^0.26.24",
     "babel-loader": "^8.1.0",
     "dompurify": "^2.0.10",
+    "firebase": "^7.2.1",
     "husky": "^4.2.5",
     "react": "^16.13.1",
     "react-div-100vh": "^0.3.8",
@@ -77,6 +76,7 @@
     "ts-loader": "^7.0.2",
     "tsdx": "^0.13.2",
     "tslib": "^1.11.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "yup": "^0.27.0"
   }
 }
