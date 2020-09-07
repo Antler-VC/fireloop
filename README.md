@@ -12,7 +12,11 @@ A component that lets your users give you feedback on your product
 ## Quick start
 
 ```jsx
-<Feedback collectionRef={db.collection('feedback')} auth={auth} />
+<Feedback
+  collectionRef={db.collection('feedback')}
+  auth={auth}
+  diagnostics={{ foo: 'bar' }}
+/>
 ```
 
 ### props
@@ -20,4 +24,5 @@ A component that lets your users give you feedback on your product
 ```ts
   collectionRef: firebase.firestore.CollectionReference<firebase.firestore.DocumentData>;
   auth: firebase.auth.Auth;
+  diagnostics:any
 ```

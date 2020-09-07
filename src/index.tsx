@@ -60,6 +60,7 @@ const useStyles = makeStyles((theme: any) =>
 export default function Feedback({
   collectionRef,
   auth,
+  diagnostics = null,
 }: {
   collectionRef: any;
   //  firebase.firestore.CollectionReference<
@@ -67,6 +68,7 @@ export default function Feedback({
   // >;
   auth: any;
   //firebase.auth.Auth;
+  diagnostics: any;
 }) {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
@@ -83,6 +85,7 @@ export default function Feedback({
   const handleSubmit = (values: Values) => {
     collectionRef.add({
       ...values,
+      diagnostics,
       user: makeUserSnapshot(auth.currentUser || {}),
       email: auth.currentUser?.email,
       createdAt: new Date(),
