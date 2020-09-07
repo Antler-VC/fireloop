@@ -86,8 +86,8 @@ export default function Feedback({
     collectionRef.add({
       ...values,
       diagnostics,
-      user: makeUserSnapshot(auth.currentUser || {}),
-      email: auth.currentUser?.email,
+      user: auth.currentUser ? makeUserSnapshot(auth.currentUser || {}) : null,
+      email: auth.currentUser?.email ?? '',
       createdAt: new Date(),
       source: window.location.origin,
       pagePath: window.location.pathname,
