@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   createStyles,
@@ -7,6 +7,7 @@ import {
   Popover,
   Tooltip,
   Typography,
+  Snackbar,
 } from '@material-ui/core';
 import FeedbackIcon from '@material-ui/icons/FeedbackRounded';
 
@@ -72,6 +73,7 @@ export default function Feedback({
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
     null
   );
+  const [snackbar, setSnackbar] = useState(false);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
@@ -89,6 +91,7 @@ export default function Feedback({
       source: window.location.origin,
       pagePath: window.location.pathname,
     });
+    setSnackbar(true);
     handleClose();
   };
 
@@ -133,6 +136,17 @@ export default function Feedback({
           SubmitButtonProps={{ className: classes.submitButton }}
         />
       </Popover>
+
+      <Snackbar
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        open={snackbar}
+        autoHideDuration={3000}
+        onClose={() => setSnackbar(false)}
+        message="Thank you for your feedback"
+      />
     </>
   );
 }
