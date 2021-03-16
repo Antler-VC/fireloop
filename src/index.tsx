@@ -41,8 +41,9 @@ const useStyles = makeStyles((theme: any) =>
   createStyles({
     fab: {
       position: 'fixed',
-      right: 20,
-      bottom: 20,
+      right: theme.spacing(2),
+      bottom: theme.spacing(2),
+      zIndex: theme.zIndex.speedDial,
     },
 
     paper: {
