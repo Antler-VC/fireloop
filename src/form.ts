@@ -1,24 +1,19 @@
-import { FIELDS } from '@antlerengineering/form-builder';
-import * as yup from 'yup';
+import { FieldType } from '@antlerengineering/form-builder';
+
 export const feedbackForm = () => [
   {
-    type: FIELDS.singleSelect,
+    type: FieldType.singleSelect,
     name: 'type',
     label: 'Type',
     options: ['General', 'Bug', 'Idea'],
-    validation: yup
-      .string()
-      .nullable()
-      .required('Required'),
+    required: true,
   },
   {
-    type: FIELDS.text,
+    type: FieldType.paragraph,
     fieldVariant: 'long',
     name: 'message',
     label: 'Message',
-    validation: yup
-      .string()
-      .max(600, 'Must be at most 600 characters')
-      .required('Required'),
+    maxCharacters: 600,
+    required: true,
   },
 ];
