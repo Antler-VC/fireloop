@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 import FeedbackIcon from '@material-ui/icons/FeedbackRounded';
 
-import Form, { Values } from '@antlerengineering/form-builder';
+import { Form } from '@antlerengineering/form-builder';
 import { feedbackForm } from './form';
 const makeUserSnapshot = ({
   displayName,
@@ -85,7 +85,7 @@ export default function Feedback({
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const handleSubmit = (values: Values) => {
+  const handleSubmit = (values: Record<string, any>) => {
     collectionRef.add({
       ...values,
       diagnostics,
